@@ -13,7 +13,8 @@ if(argv.webpack)
     var webpack = require('../node_modules/webpack'),
         webpackDevMiddleware = require('../node_modules/webpack-dev-middleware'),
         webpackHotMiddleware = require('../node_modules/webpack-hot-middleware'),
-        webpackDevConfig = require('./admin/dev');
+        // webpackDevConfig = require('./admin/dev');
+        webpackDevConfig = require('../Client/dev');
     var compiler = webpack(webpackDevConfig);
     app.use(webpackDevMiddleware(compiler, {
 

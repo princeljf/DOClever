@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "dev": "node ./Server/bin/www --webpack",
     "start": "node ./Server/bin/www"
   },
   "dependencies": {
