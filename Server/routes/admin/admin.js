@@ -84,7 +84,7 @@ function Admin()
     this.userCreate=async (req,res)=>{
         try
         {
-            let obj=await (this.admin.userCreate());
+            let obj=await (this.admin.userCreate(req.clientParam));
             if(obj)
             {
                 util.ok(res,obj,"ok");
