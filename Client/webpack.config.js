@@ -7,16 +7,16 @@ var UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 //var BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 module.exports = {
     entry: {
-        vendor:["vue","vuex","./web/common/js/common.js","./web/common/js/net","./web/common/js/local"],
-        login:["./web/controller/login/login"],
-        register:["./web/controller/register/register"],
-        reset:["./web/controller/reset/reset"],
-        console:["./web/controller/console/console"],
-        share:["./web/controller/share/share"],
-        admin:["./web/controller/admin/admin"],
-        adminlogin:["./web/controller/admin/adminlogin"],
-        public:["./web/controller/public/public"],
-        read:["./web/controller/read/read"]
+        vendor:["vue","vuex","./Client/web/common/js/common.js","./Client/web/common/js/net","./Client/web/common/js/local"],
+        login:["./Client/web/controller/login/login"],
+        register:["./Client/web/controller/register/register"],
+        reset:["./Client/web/controller/reset/reset"],
+        console:["./Client/web/controller/console/console"],
+        share:["./Client/web/controller/share/share"],
+        admin:["./Client/web/controller/admin/admin"],
+        adminlogin:["./Client/web/controller/admin/adminlogin"],
+        public:["./Client/web/controller/public/public"],
+        read:["./Client/web/controller/read/read"]
     },
     output: {
         path: path.join(__dirname, 'dist'),
